@@ -86,4 +86,33 @@ section {
             width: 100%;
         }
     }
+    .swiper-container {
+        width: 100%;
+        height: pxTorem(150px);
+        margin-top: pxTorem(10px);
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                @include box_flex;
+                @include flexWrap(wrap);
+                dl {
+                    width: 20%;
+                    text-align: center;
+                    dt {
+                        img {
+                            width: pxTorem(40px);
+                            height: pxTorem(40px);
+                            border-radius: 50%;
+                        }
+                    }
+                    dd {
+                        padding: pxTorem(6px) 0;
+                    }
+                }
+            }
+        }
+    }
 }
